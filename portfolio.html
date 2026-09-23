@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">
+<img src="images/logo.png" alt="GP3D Logo">
+<span>GP3D</span>
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="dashboard.html">Client</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h2>Our GIS & Remote Sensing Portfolio</h2>
+
+<p>Explore some of our completed GIS, Remote Sensing and 3D Modelling projects.</p>
+
+</section>
+<div class="portfolio-filter">
+
+<button onclick="filterProjects('all')">All</button>
+
+<button onclick="filterProjects('mapping')">GIS Mapping</button>
+
+<button onclick="filterProjects('remote')">Remote Sensing</button>
+
+<button onclick="filterProjects('terrain')">3D Models</button>
+
+</div>
+
+<section class="portfolio-grid">
+
+<div class="card project mapping">
+
+<img src="images/portfolio/flood-map.jpg" class="portfolio-image">
+
+<h3>Flood Vulnerability Mapping</h3>
+
+<p>Edo State, Nigeria</p>
+
+<p><strong>Software:</strong> ArcGIS Pro</p>
+
+<p><strong>Year:</strong> 2025</p>
+
+<button onclick="openImage('images/portfolio/flood-map.jpg')">
+
+View Full Map
+
+</button>
+
+</div>
+
+<div class="card">
+<img src="images/portfolio/ndvi.jpg" class="portfolio-image" alt="NDVI">
+<h3>NDVI Vegetation Monitoring</h3>
+<p>Satellite Vegetation Analysis</p>
+<button onclick="openImage('images/portfolio/ndvi.jpg')">View Project</button>
+</div>
+
+<div class="card">
+<img src="images/portfolio/lulc.jpg" class="portfolio-image" alt="LULC">
+<h3>Land Use Classification</h3>
+<p>Landsat Classification</p>
+<button onclick="openImage('images/portfolio/lulc.jpg')">View Project</button>
+</div>
+
+<div class="card">
+<img src="images/portfolio/rusle.jpg" class="portfolio-image" alt="RUSLE">
+<h3>RUSLE Soil Erosion</h3>
+<button onclick="openImage('images/portfolio/rusle.jpg')">View Project</button>
+</div>
+
+<div class="card">
+<img src="images/portfolio/terrain.jpg" class="portfolio-image" alt="Terrain">
+<h3>3D Terrain Modelling</h3>
+<p>Digital Elevation Model</p>
+<button onclick="openImage('images/portfolio/terrain.jpg')">View Project</button>
+</div>
+
+<div class="card">
+<img src="images/portfolio/watershed.jpg" class="portfolio-image" alt="Watershed">
+<h3>Watershed Analysis</h3>
+<p>Hydrological Study</p>
+<button onclick="openImage('images/portfolio/watershed.jpg')">View Project</button>
+</div>
+
+<div class="card">
+<img src="images/portfolio/gee.jpg" class="portfolio-image" alt="Google Earth Engine">
+<h3>Google Earth Engine</h3>
+<p>Cloud-Based GIS Analysis</p>
+<button onclick="openImage('images/portfolio/gee.jpg')">View Project</button>
+</div>
+
+
+</section>
+
+<div id="lightbox" class="lightbox" onclick="closeImage()">
+<img id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
